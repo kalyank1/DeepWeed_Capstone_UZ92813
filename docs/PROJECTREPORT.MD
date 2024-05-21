@@ -1,19 +1,24 @@
 ## WEEDSENSE - EMPOWERING PRECISION AGRICULTURE WITH COMPUTER VISION
 
-A CAPSTONE PROJECT BY Kalyan Karre(UZ92813)
-UNDER THE GUIDANCE OF  Dr. Muhammad Ali Yosuf
-(Course Code: Data 606)
+1. Title and Author
 
-MASTER OF PROFESSIONAL STUDIES IN DATA SCIENCE
-UNIVERSITY OF MARYLAND BALTIMORE COUNTY
+- **Project Title:** WEEDSENSE - EMPOWERING PRECISION AGRICULTURE WITH COMPUTER VISION
+- **Prepared for UMBC Data Science Master Degree Capstone by Dr. Muhammad Ali Yosuf**
+- **Author Name:** Kalyan Karre
+- **GitHub Profile:**
+https://github.com/kalyank1
+- **LinkedIn Profile:**
+www.linkedin.com/in/kalyan-karre
+- **Presentation file:**
 
-## 1.	INTRODUCTION
+
+## 2.	INTRODUCTION
 
 Early detection and monitoring of weeds play a critical role in effective agricultural management. With the deployment of deep weed detectors in the field, farmers gain the ability to monitor weed populations in real-time, allowing them to identify emerging weed infestations before they escalate into widespread problems. This proactive approach empowers farmers to take timely intervention measures, thereby preventing potential crop yield losses. By leveraging computer vision technology, these detectors can swiftly and accurately identify weeds amidst crop plants, enabling farmers to respond promptly to localized weed outbreaks and apply targeted management strategies.
 Moreover, the adoption of image-based weed detection systems offers significant potential for lowering production costs in agriculture. Traditional weed management methods, such as manual labor or blanket herbicide application, are often associated with high costs and inefficiencies. However, by implementing precision weed management techniques facilitated by deep weed detectors, farmers can minimize the need for excessive herbicide use or labor-intensive weed control measures. By accurately identifying and targeting specific weed-infested areas within fields, farmers can optimize resource allocation and reduce wastage, leading to cost savings and improved overall efficiency in crop production. This shift towards precision weed management not only reduces operational expenses but also contributes to environmentally sustainable farming practices by minimizing chemical inputs and mitigating the risk of herbicide resistance in weed populations.
 The main aim of this study is to build an image classifier capable of detecting the weed species when weed plant is provided as an input.
 
-## 2.	DATASET
+## 3.	DATASET
 
 I have used 2 datasets for this study. They are Deep Weeds and CottonWeedID15 datasets. This has been done to increase the richness of the data.
 The Deep Weeds dataset consists of 17,509 images capturing 8 different weed species native to Australia in situ with neighboring flora. The selected weed species are local to pastoral grasslands across the state of Queensland. The images were collected from weed infestations at the following sites across Queensland: 
@@ -46,13 +51,13 @@ The CottonWeedID15 dataset comprises 5187 RGB images capturing 15 common weed sp
 
 The size of this CottonWeedID15 dataset is 11.35 GB. Since the dataset is huge, I have considered 50% of its size by taking 50% of images from each of the 15 class labels. Therefore, the total dataset size would be 494 MB (or 0.494 GB) + 5.675 GB (50% of 11.35 GB) = 6.169 GB.
 
-## 3.	LITERATURE REVIEW 
+## 4.	LITERATURE REVIEW 
 
 Alex Olsen et al [2019] [1] studied multi class weed species image dataset using deep learning. This study addresses the gap in research on robotic weed control in rangeland environments by introducing the DeepWeeds dataset, the first large, publicly available multiclass image dataset of weed species from Australian rangelands. With 17,509 labeled images covering eight nationally significant weed species across eight locations in northern Australia, this dataset enables the development of robust classification methods essential for effective robotic weed control. The study employs benchmark deep learning models, namely Inception-v3 and ResNet-50, to establish a baseline for classification performance on the dataset. Results indicate high accuracy rates, with Inception-v3 achieving an average classification accuracy of 95.1% and ResNet-50 achieving 95.7%. Additionally, real-time performance of the ResNet-50 architecture is demonstrated, showcasing an average inference time of 53.4 milliseconds per image. These promising findings suggest a strong potential for the future implementation of robotic weed control methods in Australian rangelands, addressing critical challenges in weed management for stock farmers.
 
 A S M Mahmudul Hasan et al [2021] [2] studied weed recognition using deep learning techniques on class imbalanced imagery. This paper investigates the efficacy of five state-of-the-art deep neural networks—VGG16, ResNet-50, Inception-V3, Inception-ResNet-v2, and MobileNetV2—for recognizing weeds from images, crucial for developing automatic weed management systems in agriculture. By employing various experimental settings and dataset combinations, including a large weed-crop dataset created by amalgamating smaller datasets and mitigating class imbalance through data augmentation, the study evaluates model performance. Transfer learning techniques, utilizing pre-trained weights for feature extraction, and fine-tuning on crop and weed datasets, are explored. Results indicate that VGG16 outperforms others on small-scale datasets, while ResNet-50 excels on larger combined datasets. The study underscores the significance of data augmentation and fine-tuning in enhancing deep learning model performance for crop and weed image classification.
 
-## 4.	EXPLORATORY DATA ANALYSIS
+## 5.	EXPLORATORY DATA ANALYSIS
 
 Firstly, the distribution of the class labels from the combined dataset [Deep Weeds + 50% of CottonWeedID15] has been studied by plotting the bar chart as below.
 It can be observed from the Fig 1, that the class label - Negative has the highest number of images while SpurredAnoda has the least number of images. Therefore, there is a huge imbalance in the dataset.
@@ -84,7 +89,7 @@ Now, let us see how these augmented images look like for a sample image. Here 12
 Fig 4 - Augmented images for a sample image
 
 
-## 5.	MODELLING 
+## 6.	MODELLING 
 
 To solve the defined problem, I have leveraged the transfer learning. Here, in this study VGG16 and InceptionV3 pretrained architectures have been considered.
 The following approach has been followed for transfer learning.
@@ -102,7 +107,7 @@ Fig 5 – VGG16 Architecture
   
 Fig 6 – InceptionV3 Architecture
 
-## 6.	RESULTS
+## 7.	RESULTS
 
 The above models are trained using Adam as an optimizer with initial learning rate of 0.0001 using AUC as the performance metric. Here, AUC is used as the metric since we have severe imbalanced dataset.
 Batch size of 16 has been considered. 
@@ -141,12 +146,12 @@ These predictions are performed on the sample test data points.
 Fig 9 – Predictions on sample test data
 
 
-## 7.	CONCLUSION
+## 8.	CONCLUSION
 
 Incorporating InceptionV3 into image classification systems offers a multitude of benefits. Its state-of-the-art architecture, high accuracy, and efficient feature extraction capabilities make it a top choice for developers seeking to build robust and accurate image classification models. By utilizing transfer learning with InceptionV3, developers can adapt the network to various classification tasks with minimal data requirements, saving time and computational resources. Overall, integrating InceptionV3 enhances the effectiveness and efficiency of image classification systems, providing businesses and researchers with powerful tools for solving complex classification challenges.
 
 
-## 8.	REFERENCES
+## 9.	REFERENCES
 
 [1] Olsen, A., Konovalov, D. A., Philippa, B., Ridd, P., Wood, J. C., Johns, J., ... & White, R. D. (2019). DeepWeeds: A multiclass weed species image dataset for deep learning. Scientific reports, 9(1), 2058.
 Link - https://arxiv.org/abs/1810.05726
