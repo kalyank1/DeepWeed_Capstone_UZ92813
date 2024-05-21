@@ -10,6 +10,7 @@ https://github.com/kalyank1
 - **LinkedIn Profile:**
 www.linkedin.com/in/kalyan-karre
 - **Presentation file:**
+https://github.com/kalyank1/DeepWeed_Capstone_UZ92813/blob/main/docs/Presentation.pptx
 
 
 ## 2.	INTRODUCTION
@@ -20,8 +21,10 @@ The main aim of this study is to build an image classifier capable of detecting 
 
 ## 3.	DATASET
 
+
+[CottonWeedID Dataset] (https://www.kaggle.com/datasets/yuzhenlu/cottonweedid15)
 I have used 2 datasets for this study. They are Deep Weeds and CottonWeedID15 datasets. This has been done to increase the richness of the data.
-The Deep Weeds dataset consists of 17,509 images capturing 8 different weed species native to Australia in situ with neighboring flora. The selected weed species are local to pastoral grasslands across the state of Queensland. The images were collected from weed infestations at the following sites across Queensland: 
+The Deep Weeds dataset consits of 17,509 images capturing 8 different weed species native to Australia in situ with neighboring flora. The selected weed species are local to pastoral grasslands across the state of Queensland. The images were collected from weed infestations at the following sites across Queensland: 
 •	Black River
 •	Charters Towers
 •	Cluden
@@ -31,6 +34,8 @@ The Deep Weeds dataset consists of 17,509 images capturing 8 different weed spec
 •	McKinlay
 •	Paluma.
 
+
+[DeepWeeds Dataset] (https://www.kaggle.com/datasets/imsparsh/deepweeds)
 The size of the Deep Weeds dataset is 494 MB.
 The CottonWeedID15 dataset comprises 5187 RGB images capturing 15 common weed species typically found in cotton fields across the southern United States. 
 •	Carpetweeds
