@@ -56,8 +56,8 @@ A S M Mahmudul Hasan et al [2021] [2] studied weed recognition using deep learni
 
 Firstly, the distribution of the class labels from the combined dataset [Deep Weeds + 50% of CottonWeedID15] has been studied by plotting the bar chart as below.
 It can be observed from the Fig 1, that the class label - Negative has the highest number of images while SpurredAnoda has the least number of images. Therefore, there is a huge imbalance in the dataset.
-Fig 1 – Bar Chart showing distribution of class labels 
 
+Fig 1 – Bar Chart showing distribution of class labels
 
 The following are the few sample images from the dataset to give an understanding about the images in the dataset.
 
